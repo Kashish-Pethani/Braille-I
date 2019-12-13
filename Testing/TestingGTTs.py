@@ -3,8 +3,8 @@ from gtts import gTTS
 
 def speak_en(text):
     """
-    This function takes a text input from any text file using read and converts 
-    it into a string which is later on conerted to 
+    This function takes a string and converts into a mp3 file using gTTS
+    and later to  plays the mp3 file using the playsound module
     """
     tts = gTTS(text=text, lang="en",slow=False )  # Set the value of slow to
                                                     #  true for the language to
